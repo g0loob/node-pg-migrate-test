@@ -1,0 +1,16 @@
+{
+  "name": "pg-migration-example",
+  "version": "1.0.0",
+  "description": "migration example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node-pg-migrate"
+  },
+  "author": "Stefan Golubovic",
+  "license": "ISC",
+  "dependencies": {
+    "node-pg-migrate": "^4.2.3",
+    "pg": "^7.18.2"
+  }
+}

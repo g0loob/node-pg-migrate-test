@@ -4,13 +4,13 @@ services:
     web:
         build: .
         environment:
-            DB_HOST: db
-            DB_PORT: 5432
+            DB_HOST: db # service name
+            DB_PORT: 5432 
             DATABASE_URL: postgres://postgres:password@db:5432/example
         depends_on: 
             - db
         volumes:
-            - "${PWD}:/usr/src/app"
+            - "${PWD}:/usr/src/app" # bind-mount current directory to have access for migrations/
         networks:
             - mynetwork
     
